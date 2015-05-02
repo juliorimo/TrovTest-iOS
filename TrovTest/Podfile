@@ -1,0 +1,9 @@
+# Podfile
+
+platform :ios, '7.1'
+
+pod 'SVProgressHUD', '~> 1.1'
+
+target :TrovTestTests, :exclusive => true do
+  # pod 'Kiwi'
+end
