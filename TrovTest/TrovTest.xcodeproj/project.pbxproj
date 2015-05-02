@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		897B458E1AF4DD9700E6BA68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B458D1AF4DD9700E6BA68 /* main.m */; };
 		897B45911AF4DD9700E6BA68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45901AF4DD9700E6BA68 /* AppDelegate.m */; };
-		897B45941AF4DD9700E6BA68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45931AF4DD9700E6BA68 /* ViewController.m */; };
-		897B45971AF4DD9700E6BA68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897B45951AF4DD9700E6BA68 /* Main.storyboard */; };
 		897B45991AF4DD9700E6BA68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897B45981AF4DD9700E6BA68 /* Images.xcassets */; };
 		897B459C1AF4DD9700E6BA68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897B459A1AF4DD9700E6BA68 /* LaunchScreen.xib */; };
 		897B45A81AF4DD9700E6BA68 /* TrovTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45A71AF4DD9700E6BA68 /* TrovTestTests.m */; };
+		897B45BA1AF4E73100E6BA68 /* TTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45B91AF4E73100E6BA68 /* TTListViewController.m */; };
+		897B45BD1AF4E74300E6BA68 /* TTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45BC1AF4E74300E6BA68 /* TTDetailViewController.m */; };
+		897B45C11AF5192000E6BA68 /* TTDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45C01AF5192000E6BA68 /* TTDataProvider.m */; };
+		897B45C61AF5236100E6BA68 /* TTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45C51AF5236100E6BA68 /* TTUtils.m */; };
+		897B45C91AF527F500E6BA68 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 897B45CB1AF527F500E6BA68 /* Localizable.strings */; };
 		D8D9BA38F05F02B65AA7BA39 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB47727E9CFA17ADCBB2DA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,14 +38,22 @@
 		897B458D1AF4DD9700E6BA68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		897B458F1AF4DD9700E6BA68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		897B45901AF4DD9700E6BA68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		897B45921AF4DD9700E6BA68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		897B45931AF4DD9700E6BA68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		897B45961AF4DD9700E6BA68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		897B45981AF4DD9700E6BA68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		897B459B1AF4DD9700E6BA68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		897B45A11AF4DD9700E6BA68 /* TrovTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrovTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897B45A61AF4DD9700E6BA68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897B45A71AF4DD9700E6BA68 /* TrovTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrovTestTests.m; sourceTree = "<group>"; };
+		897B45B81AF4E73100E6BA68 /* TTListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTListViewController.h; sourceTree = "<group>"; };
+		897B45B91AF4E73100E6BA68 /* TTListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTListViewController.m; sourceTree = "<group>"; };
+		897B45BB1AF4E74300E6BA68 /* TTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDetailViewController.h; sourceTree = "<group>"; };
+		897B45BC1AF4E74300E6BA68 /* TTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDetailViewController.m; sourceTree = "<group>"; };
+		897B45BE1AF5171E00E6BA68 /* TTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTConstants.h; sourceTree = "<group>"; };
+		897B45BF1AF5192000E6BA68 /* TTDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDataProvider.h; sourceTree = "<group>"; };
+		897B45C01AF5192000E6BA68 /* TTDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDataProvider.m; sourceTree = "<group>"; };
+		897B45C21AF5199100E6BA68 /* TrovTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrovTest-Prefix.pch"; sourceTree = "<group>"; };
+		897B45C41AF5236100E6BA68 /* TTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUtils.h; sourceTree = "<group>"; };
+		897B45C51AF5236100E6BA68 /* TTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUtils.m; sourceTree = "<group>"; };
+		897B45CA1AF527F500E6BA68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D58DB9B12C2EE451B13E222D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,12 +110,12 @@
 			children = (
 				897B458F1AF4DD9700E6BA68 /* AppDelegate.h */,
 				897B45901AF4DD9700E6BA68 /* AppDelegate.m */,
-				897B45921AF4DD9700E6BA68 /* ViewController.h */,
-				897B45931AF4DD9700E6BA68 /* ViewController.m */,
-				897B45951AF4DD9700E6BA68 /* Main.storyboard */,
-				897B45981AF4DD9700E6BA68 /* Images.xcassets */,
-				897B459A1AF4DD9700E6BA68 /* LaunchScreen.xib */,
+				897B45B11AF4E16A00E6BA68 /* Controllers */,
+				897B45B31AF4E17B00E6BA68 /* DataProvider */,
+				897B45B21AF4E17600E6BA68 /* Model */,
+				897B45B51AF4E19700E6BA68 /* Resources */,
 				897B458B1AF4DD9700E6BA68 /* Supporting Files */,
+				897B45C31AF5234F00E6BA68 /* Utils */,
 			);
 			path = TrovTest;
 			sourceTree = "<group>";
@@ -114,6 +125,8 @@
 			children = (
 				897B458C1AF4DD9700E6BA68 /* Info.plist */,
 				897B458D1AF4DD9700E6BA68 /* main.m */,
+				897B45BE1AF5171E00E6BA68 /* TTConstants.h */,
+				897B45C21AF5199100E6BA68 /* TrovTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,6 +146,68 @@
 				897B45A61AF4DD9700E6BA68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		897B45B11AF4E16A00E6BA68 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				897B45B71AF4E6EA00E6BA68 /* Detail */,
+				897B45B61AF4E6E300E6BA68 /* List */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		897B45B21AF4E17600E6BA68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		897B45B31AF4E17B00E6BA68 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				897B45BF1AF5192000E6BA68 /* TTDataProvider.h */,
+				897B45C01AF5192000E6BA68 /* TTDataProvider.m */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+		897B45B51AF4E19700E6BA68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				897B459A1AF4DD9700E6BA68 /* LaunchScreen.xib */,
+				897B45981AF4DD9700E6BA68 /* Images.xcassets */,
+				897B45CB1AF527F500E6BA68 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		897B45B61AF4E6E300E6BA68 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				897B45B81AF4E73100E6BA68 /* TTListViewController.h */,
+				897B45B91AF4E73100E6BA68 /* TTListViewController.m */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		897B45B71AF4E6EA00E6BA68 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				897B45BB1AF4E74300E6BA68 /* TTDetailViewController.h */,
+				897B45BC1AF4E74300E6BA68 /* TTDetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		897B45C31AF5234F00E6BA68 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				897B45C41AF5236100E6BA68 /* TTUtils.h */,
+				897B45C51AF5236100E6BA68 /* TTUtils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		ABAC6A9B6E51CD56FC007A77 /* Frameworks */ = {
@@ -189,6 +264,7 @@
 		897B45801AF4DD9700E6BA68 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TT;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Julio Rivas";
 				TargetAttributes = {
@@ -225,8 +301,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897B45971AF4DD9700E6BA68 /* Main.storyboard in Resources */,
 				897B459C1AF4DD9700E6BA68 /* LaunchScreen.xib in Resources */,
+				897B45C91AF527F500E6BA68 /* Localizable.strings in Resources */,
 				897B45991AF4DD9700E6BA68 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,9 +354,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897B45941AF4DD9700E6BA68 /* ViewController.m in Sources */,
 				897B45911AF4DD9700E6BA68 /* AppDelegate.m in Sources */,
+				897B45C61AF5236100E6BA68 /* TTUtils.m in Sources */,
+				897B45BD1AF4E74300E6BA68 /* TTDetailViewController.m in Sources */,
+				897B45C11AF5192000E6BA68 /* TTDataProvider.m in Sources */,
 				897B458E1AF4DD9700E6BA68 /* main.m in Sources */,
+				897B45BA1AF4E73100E6BA68 /* TTListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,20 +382,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		897B45951AF4DD9700E6BA68 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				897B45961AF4DD9700E6BA68 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		897B459A1AF4DD9700E6BA68 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				897B459B1AF4DD9700E6BA68 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		897B45CB1AF527F500E6BA68 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				897B45CA1AF527F500E6BA68 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,6 +426,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "TrovTest/TrovTest-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -390,6 +470,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "TrovTest/TrovTest-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

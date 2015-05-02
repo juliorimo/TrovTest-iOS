@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TTListViewController.h
 //  TrovTest
 //
 //  Created by Julio Rivas on 2/5/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TTListViewController : UIViewController
 
 @end
-

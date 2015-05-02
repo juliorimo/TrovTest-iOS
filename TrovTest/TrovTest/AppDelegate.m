@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TTListViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,49 @@
 
 @implementation AppDelegate
 
+#pragma mark - Testing
+
+- (BOOL)isRunningTests {
+    NSDictionary *environment = [[NSProcessInfo processInfo] environment];
+    NSString *injectBundle = environment[@"XCInjectBundle"];
+    return [[injectBundle pathExtension] isEqualToString:@"xctest"];
+}
+
+- (void)configureForTesting {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UIViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:self.window.rootViewController.view.bounds];
+    label.text = @"Running Tests…!";
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont systemFontOfSize:32];
+    [self.window.rootViewController.view addSubview:label];
+    [self.window makeKeyAndVisible];
+}
+
+#pragma mark - AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    //if we are testing we dont want the remainder of the app to continue launching so we just short circuit here
+    if ([self isRunningTests]) {
+        [self configureForTesting];
+        return YES;
+    }
+    
+    //List
+    TTListViewController *listViewController = [[TTListViewController alloc] init];
+    
+    //Navigation
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    
+    //Window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

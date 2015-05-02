@@ -3,6 +3,8 @@
 platform :ios, '7.1'
 
 pod 'SVProgressHUD', '~> 1.1'
+pod 'SDWebImage', '~> 3.7'
+pod 'AFNetworking', '~> 2.5.3'
 
 target :TrovTestTests, :exclusive => true do
   # pod 'Kiwi'

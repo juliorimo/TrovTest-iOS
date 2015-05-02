@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TrovTest
+
+  Created by Julio Rivas on 2/5/15.
+  Copyright (c) 2015 Julio Rivas. All rights reserved.
+*/
+
+"_ALERT_TITLE"="Alert!";
+
+"_BUTTON_OK"="Ok";
