@@ -9,23 +9,28 @@
 #import "TTListViewController.h"
 #import "TTUtils.h"
 #import "TTDataProvider.h"
+#import "TTConstants.h"
+#import "TTNews.h"
 
-@interface TTListViewController () <UITableViewDataSource,UITableViewDelegate>
+@interface TTListViewController ()
 
 @end
 
 @implementation TTListViewController{
-
-    //Content
-    NSArray *_contentArray;
     
-    //Table
-    UITableView *_tableView;
+    //Flag
+    BOOL _isReloading;
+    
+    //Refresh
+    UIRefreshControl *_refreshControl;
 }
 
 #pragma mark - SetUp
 
 - (void)setUp {
+    
+    //Title
+    self.title = NSLocalizedString(@"_LIST_TITLE", @"");
 
     //Table
     CGRect frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
@@ -36,6 +41,12 @@
     [_tableView setDataSource:self];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     [self.view addSubview:_tableView];
+    
+    //Refresh
+    _refreshControl = [[UIRefreshControl alloc]init];
+    [_tableView addSubview:_refreshControl];
+    [_refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+
 }
 
 #pragma mark - Load data
@@ -47,11 +58,19 @@
     
     //Data
     TTDataProvider *dataProvider = [[TTDataProvider alloc] init];
-    [dataProvider loadNewsWithCompletionBlock:^(BOOL success, NSArray *responseArray, NSError *error) {
+    [dataProvider loadNews:TTBaseUrl withCompletionBlock:^(BOOL success, NSArray *responseArray, NSError *error) {
        
         //Hide
         [TTUtils hideProgressHud];
         
+        //Reloading
+        if(_isReloading)
+        {
+            _isReloading=NO;
+            [_refreshControl endRefreshing];
+        }
+        
+        //Response
         if(success){
             
             //Content
@@ -66,6 +85,17 @@
             [TTUtils showError:error];
         }
     }];
+}
+
+#pragma mark - Reload
+
+- (void)refreshTable{
+
+    //Flag
+    _isReloading=YES;
+    
+    //Load
+    [self loadNews];
 }
 
 #pragma mark - View life cycle
@@ -122,9 +152,16 @@
         cell.backgroundColor = [UIColor clearColor];
     }
     
-    cell.textLabel.text = _contentArray[indexPath.row];
+    cell.textLabel.text = [(TTNews *)_contentArray[indexPath.row] title];
     
     return cell;
+}
+
+#pragma mark - UITableView delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

@@ -11,12 +11,18 @@
 		897B45911AF4DD9700E6BA68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45901AF4DD9700E6BA68 /* AppDelegate.m */; };
 		897B45991AF4DD9700E6BA68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897B45981AF4DD9700E6BA68 /* Images.xcassets */; };
 		897B459C1AF4DD9700E6BA68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897B459A1AF4DD9700E6BA68 /* LaunchScreen.xib */; };
-		897B45A81AF4DD9700E6BA68 /* TrovTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45A71AF4DD9700E6BA68 /* TrovTestTests.m */; };
 		897B45BA1AF4E73100E6BA68 /* TTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45B91AF4E73100E6BA68 /* TTListViewController.m */; };
-		897B45BD1AF4E74300E6BA68 /* TTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45BC1AF4E74300E6BA68 /* TTDetailViewController.m */; };
 		897B45C11AF5192000E6BA68 /* TTDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45C01AF5192000E6BA68 /* TTDataProvider.m */; };
 		897B45C61AF5236100E6BA68 /* TTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45C51AF5236100E6BA68 /* TTUtils.m */; };
 		897B45C91AF527F500E6BA68 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 897B45CB1AF527F500E6BA68 /* Localizable.strings */; };
+		89E19B2F1AF6ADE800C0E8AE /* TTNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E19B2E1AF6ADE800C0E8AE /* TTNews.m */; };
+		89E19B341AF6B17400C0E8AE /* TTDataProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E19B331AF6B17400C0E8AE /* TTDataProviderTests.m */; };
+		89E19B361AF6B18000C0E8AE /* TTNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E19B351AF6B18000C0E8AE /* TTNewsTests.m */; };
+		89E19B381AF6B19200C0E8AE /* TTListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E19B371AF6B19200C0E8AE /* TTListViewControllerTests.m */; };
+		89E19B391AF6B19700C0E8AE /* TTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45B91AF4E73100E6BA68 /* TTListViewController.m */; };
+		89E19B3A1AF6B19900C0E8AE /* TTDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B45C01AF5192000E6BA68 /* TTDataProvider.m */; };
+		89E19B3B1AF6B19C00C0E8AE /* TTNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E19B2E1AF6ADE800C0E8AE /* TTNews.m */; };
+		8C9F71E84C92A447C939D713 /* libPods-TrovTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E134283D83046330BF1A27BE /* libPods-TrovTestTests.a */; };
 		D8D9BA38F05F02B65AA7BA39 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB47727E9CFA17ADCBB2DA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D904C1BF8FE79332B47AA72 /* Pods-TrovTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrovTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrovTestTests/Pods-TrovTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		546499AA724E6A5963CC5973 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		68CB47727E9CFA17ADCBB2DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		897B45881AF4DD9700E6BA68 /* TrovTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrovTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +49,8 @@
 		897B459B1AF4DD9700E6BA68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		897B45A11AF4DD9700E6BA68 /* TrovTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrovTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897B45A61AF4DD9700E6BA68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		897B45A71AF4DD9700E6BA68 /* TrovTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrovTestTests.m; sourceTree = "<group>"; };
 		897B45B81AF4E73100E6BA68 /* TTListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTListViewController.h; sourceTree = "<group>"; };
 		897B45B91AF4E73100E6BA68 /* TTListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTListViewController.m; sourceTree = "<group>"; };
-		897B45BB1AF4E74300E6BA68 /* TTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDetailViewController.h; sourceTree = "<group>"; };
-		897B45BC1AF4E74300E6BA68 /* TTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDetailViewController.m; sourceTree = "<group>"; };
 		897B45BE1AF5171E00E6BA68 /* TTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTConstants.h; sourceTree = "<group>"; };
 		897B45BF1AF5192000E6BA68 /* TTDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDataProvider.h; sourceTree = "<group>"; };
 		897B45C01AF5192000E6BA68 /* TTDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDataProvider.m; sourceTree = "<group>"; };
@@ -54,7 +58,14 @@
 		897B45C41AF5236100E6BA68 /* TTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUtils.h; sourceTree = "<group>"; };
 		897B45C51AF5236100E6BA68 /* TTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUtils.m; sourceTree = "<group>"; };
 		897B45CA1AF527F500E6BA68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		89E19B2D1AF6ADE800C0E8AE /* TTNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNews.h; sourceTree = "<group>"; };
+		89E19B2E1AF6ADE800C0E8AE /* TTNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNews.m; sourceTree = "<group>"; };
+		89E19B331AF6B17400C0E8AE /* TTDataProviderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDataProviderTests.m; sourceTree = "<group>"; };
+		89E19B351AF6B18000C0E8AE /* TTNewsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNewsTests.m; sourceTree = "<group>"; };
+		89E19B371AF6B19200C0E8AE /* TTListViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTListViewControllerTests.m; sourceTree = "<group>"; };
+		D2C27E226CA1002517A80300 /* Pods-TrovTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrovTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrovTestTests/Pods-TrovTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		D58DB9B12C2EE451B13E222D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E134283D83046330BF1A27BE /* libPods-TrovTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrovTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9F71E84C92A447C939D713 /* libPods-TrovTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,8 @@
 			children = (
 				D58DB9B12C2EE451B13E222D /* Pods.debug.xcconfig */,
 				546499AA724E6A5963CC5973 /* Pods.release.xcconfig */,
+				2D904C1BF8FE79332B47AA72 /* Pods-TrovTestTests.debug.xcconfig */,
+				D2C27E226CA1002517A80300 /* Pods-TrovTestTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -134,7 +148,9 @@
 		897B45A41AF4DD9700E6BA68 /* TrovTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				897B45A71AF4DD9700E6BA68 /* TrovTestTests.m */,
+				89E19B321AF6B15400C0E8AE /* Controllers */,
+				89E19B311AF6B15000C0E8AE /* Model */,
+				89E19B301AF6B14600C0E8AE /* DataProvider */,
 				897B45A51AF4DD9700E6BA68 /* Supporting Files */,
 			);
 			path = TrovTestTests;
@@ -151,7 +167,6 @@
 		897B45B11AF4E16A00E6BA68 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				897B45B71AF4E6EA00E6BA68 /* Detail */,
 				897B45B61AF4E6E300E6BA68 /* List */,
 			);
 			name = Controllers;
@@ -160,6 +175,8 @@
 		897B45B21AF4E17600E6BA68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				89E19B2D1AF6ADE800C0E8AE /* TTNews.h */,
+				89E19B2E1AF6ADE800C0E8AE /* TTNews.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,15 +209,6 @@
 			name = List;
 			sourceTree = "<group>";
 		};
-		897B45B71AF4E6EA00E6BA68 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				897B45BB1AF4E74300E6BA68 /* TTDetailViewController.h */,
-				897B45BC1AF4E74300E6BA68 /* TTDetailViewController.m */,
-			);
-			name = Detail;
-			sourceTree = "<group>";
-		};
 		897B45C31AF5234F00E6BA68 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,10 +218,35 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		89E19B301AF6B14600C0E8AE /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				89E19B331AF6B17400C0E8AE /* TTDataProviderTests.m */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+		89E19B311AF6B15000C0E8AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89E19B351AF6B18000C0E8AE /* TTNewsTests.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		89E19B321AF6B15400C0E8AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89E19B371AF6B19200C0E8AE /* TTListViewControllerTests.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		ABAC6A9B6E51CD56FC007A77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				68CB47727E9CFA17ADCBB2DA /* libPods.a */,
+				E134283D83046330BF1A27BE /* libPods-TrovTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 897B45AE1AF4DD9700E6BA68 /* Build configuration list for PBXNativeTarget "TrovTestTests" */;
 			buildPhases = (
+				32BD2086971E59BB7A96EE71 /* Check Pods Manifest.lock */,
 				897B459D1AF4DD9700E6BA68 /* Sources */,
 				897B459E1AF4DD9700E6BA68 /* Frameworks */,
 				897B459F1AF4DD9700E6BA68 /* Resources */,
+				31AF7B099AFB564159FEF6B2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,6 +352,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		31AF7B099AFB564159FEF6B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrovTestTests/Pods-TrovTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32BD2086971E59BB7A96EE71 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B20CAE4CEFD6AEB85CDE06FA /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,10 +421,10 @@
 			files = (
 				897B45911AF4DD9700E6BA68 /* AppDelegate.m in Sources */,
 				897B45C61AF5236100E6BA68 /* TTUtils.m in Sources */,
-				897B45BD1AF4E74300E6BA68 /* TTDetailViewController.m in Sources */,
 				897B45C11AF5192000E6BA68 /* TTDataProvider.m in Sources */,
 				897B458E1AF4DD9700E6BA68 /* main.m in Sources */,
 				897B45BA1AF4E73100E6BA68 /* TTListViewController.m in Sources */,
+				89E19B2F1AF6ADE800C0E8AE /* TTNews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +432,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897B45A81AF4DD9700E6BA68 /* TrovTestTests.m in Sources */,
+				89E19B3B1AF6B19C00C0E8AE /* TTNews.m in Sources */,
+				89E19B391AF6B19700C0E8AE /* TTListViewController.m in Sources */,
+				89E19B361AF6B18000C0E8AE /* TTNewsTests.m in Sources */,
+				89E19B3A1AF6B19900C0E8AE /* TTDataProvider.m in Sources */,
+				89E19B341AF6B17400C0E8AE /* TTDataProviderTests.m in Sources */,
+				89E19B381AF6B19200C0E8AE /* TTListViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +579,7 @@
 		};
 		897B45AF1AF4DD9700E6BA68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D904C1BF8FE79332B47AA72 /* Pods-TrovTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -528,6 +599,7 @@
 		};
 		897B45B01AF4DD9700E6BA68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C27E226CA1002517A80300 /* Pods-TrovTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

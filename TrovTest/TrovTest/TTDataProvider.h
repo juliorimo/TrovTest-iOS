@@ -12,6 +12,6 @@ typedef void (^TTArrayBlock)(BOOL success, NSArray *responseArray, NSError *erro
 
 @interface TTDataProvider : NSObject
 
-- (void)loadNewsWithCompletionBlock:(TTArrayBlock)completionBlock;
+- (void)loadNews:(NSString *)url withCompletionBlock:(TTArrayBlock)completionBlock;
 
 @end

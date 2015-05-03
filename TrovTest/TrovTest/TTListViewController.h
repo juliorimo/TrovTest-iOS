@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TTListViewController : UIViewController
+@interface TTListViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong) NSArray *contentArray;
+@property (nonatomic,strong) UITableView *tableView;
 
 @end
