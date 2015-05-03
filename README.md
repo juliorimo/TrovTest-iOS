@@ -6,3 +6,5 @@ iOS Test for Trov
  - Show me at least one useful test case.
 
 Data from CNN RSS using Google JSON API:  http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=100&q=http://rss.cnn.com/rss/edition.rss
+
+Pods are not inlucided, so excute "Pods install" before compile.
